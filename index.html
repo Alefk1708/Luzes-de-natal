@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Lights</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libertinus+Math&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Luzes de Natal</h1>
+    <div class="container" id="container">
+      <div class="circleContainer" id="circleContainer">
+        
+      </div>
+    </div>
+    <button id="start">LIGAR</button>
+    <p>Aperte mais de uma vez para diferentes modos</p>
+    <section class="painelContainer">
+      <div class="mainContainer">
+        <div class="painel">
+          <div>
+            <p>Numero de circulos: <span id="displayNumber">7</span></p>
+            <input
+              type="range"
+              name="numberCircles"
+              id="numberCircles"
+              min="1"
+              max="7"
+              value="7"
+            />
+          </div>
+        </div>
+        <div class="painel">
+          <p>Tamanho em rem: <span id="widthRemDisplay">3</span>
+          <input type="range" name="widthRem" id="widthRem" min="3" max="5" value="3">
+        </div>
+      </div>
+
+      <div class="rightPainel">
+        <p>Cores:</p>
+
+        <div class="colorsContainer">
+          <p class="circulos">circulos 1:</p>
+          <input type="color" name="color" id="1" value="#B71C1C" onchange="changeColor('circle-0','1')"/>
+        </div>
+        <div class="colorsContainer">
+          <p class="circulos">circulos 2:</p>
+          <input type="color" name="color" id="2" value="#EF6C00" onchange="changeColor('circle-1', '2')"/>
+        </div>
+        <div class="colorsContainer">
+          <p class="circulos">circulos 3:</p>
+          <input type="color" name="color" id="3" value="#FBC02D" onchange="changeColor('circle-2', '3')"/>
+        </div>
+        <div class="colorsContainer">
+          <p class="circulos">circulos 4:</p>
+          <input type="color" name="color" id="4" value="#2E7D32" onchange="changeColor('circle-3', '4')"/>
+        </div>
+        <div class="colorsContainer">
+          <p class="circulos">circulos 5:</p>
+          <input type="color" name="color" id="5" value="#0288D1" onchange="changeColor('circle-4', '5')"/>
+        </div>
+        <div class="colorsContainer">
+          <p class="circulos">circulos 6:</p>
+          <input type="color" name="color" id="6" value="#283593" onchange="changeColor('circle-5', '6')"/>
+        </div>
+        <div class="colorsContainer">
+          <p class="circulos">circulos 7:</p>
+          <input type="color" name="color" id="7" value="#6A1B9A" onchange="changeColor('circle-6', '7')"/>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
